@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+/*Настройка сылки на главную*/
+.back-to-main{
+    display: block;
+    margin: 20px;
+    width: max-content;
+}
+/*настройка фона страницы*/
+body{
+    background: #f5f5f5;
+
+}
+.card{
+    max-width: 500px;/*размер изображения*/
+    width: 100%;/*адаптирование под все экраны*/
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;/*закругление углов*/
+    box-shadow: 0px 5px 15px rgba(0,0,0, .1);/*тень карточки*/
+    transition: 0.3s;/*скорость увеличения карточки*/
+}
+.card:hover{
+    transform: scale(1.02);/*размер увеличения карточки при наведении на нее*/
+}
+/*настрока сердечка*/
+.card .favorite{
+    text-align: right;/*сердечко перешло в правый угол*/
+}
+.card .favorite a{
+    text-decoration: none;/*чтобы у сердечка убрать нижнее почеркивание, none-убрать элементы,line-through-зачерквание текста*/
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    margin: 16px 0px;
+    font-size: 20px;
+}
+
+.card .info{
+    line-height: 1.2;/*настройка отступов в тексте*/
+/*text-align: justify;отображение текста по всей ширине*/
+margin: 16px 0;
+}
+/*настрока цены */
+.card .price{
+    color: #2c3e50;/*цвет текста*/
+    font-weight: bold;/*жирность*/
+    font-size: 24px;/*размер*/
+
+}
+/*настройка второй цены*/
+.card .old-price{
+    color: #e74c3c;
+    text-decoration: line-through;/*перечеркнуто*/
+    font-size: 16px;/*размер шрифта*/
+}
+/*настройка кнопки*/
+.card button{
+    background: linear-gradient(to right, #3498db, #2ecc71); /*настройка фона, to right означает с лева на прово*/
+    color: white;/*цвет текста*/
+    border: none;/*рамка, в данном случае убрана значением none*/
+    padding: 10px 20px;/*размер кнопки*/
+    border-radius: 5px;/*Закругление*/
+    cursor: pointer;/*при навидение на кнопку появляется рука*/
+}
+.card button:hover{
+    /*opacity: 0.8 при наведение кнопка будет посветлее*/ 
+    filter: brightness(0.8);
+}
